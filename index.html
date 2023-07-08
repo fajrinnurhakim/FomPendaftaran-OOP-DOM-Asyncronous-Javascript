@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi dan List Pendaftar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="registrasi-tab" data-toggle="tab" href="#registrasi" role="tab"
+                    aria-controls="registrasi" aria-selected="true">Registrasi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="list-pendaftar-tab" data-toggle="tab" href="#list-pendaftar" role="tab"
+                    aria-controls="list-pendaftar" aria-selected="false">List Pendaftar</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="registrasi" role="tabpanel" aria-labelledby="registrasi-tab">
+                <form id="formRegistrasi">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="umur">Umur</label>
+                            <input type="number" class="form-control" id="umur" placeholder="Masukkan Umur">
+                        </div>
+                        <div class="form-group col">
+                            <label for="uangSangu">Uang Sangu</label>
+                            <input type="number" class="form-control" id="uangSangu" placeholder="Masukkan Jumlah Uang">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="list-pendaftar" role="tabpanel" aria-labelledby="list-pendaftar-tab">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Umur</th>
+                            <th scope="col">Uang Sangu</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelPendaftar">
+                    </tbody>
+                </table>
+                <div id="resume"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
