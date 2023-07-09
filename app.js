@@ -38,7 +38,7 @@ class ListPendaftar {
         return total / this.listPendaftar.length;
     }
 }
-// instance dari kelas Pendaftarlist
+// instance dari kelas ListPendaftar
 const listPendaftar = new ListPendaftar();
 
 // Mengupdate tampilan resume dengan nilai rata-rata
